@@ -2,7 +2,7 @@
 
 
 export abstract class Animal {
-    constructor(public name: string, protected legs: number) {
+    constructor(public name: string, protected readonly legs: number) {
         this.name = name;
         this.legs = legs;
     }
@@ -11,7 +11,6 @@ export abstract class Animal {
         console.log(`My name is ${name}`)
     }
 }
-
 
 export class Dog extends Animal {
     constructor(name: string, public owner: string) {
@@ -31,7 +30,7 @@ export class Dog extends Animal {
 
 
 export class Cat extends Animal {
-    constructor(name: string, protected owner: string) {
+    constructor(name: string, public livesLeft: number = 9) {
         super(name, 4);
     }
 

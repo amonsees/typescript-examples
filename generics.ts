@@ -26,7 +26,7 @@ const zoo = new ZooArea<Dog | Cat>('Backyard Dog House');
 dogHouse.addAnimal(new Dog('Fido','Anthony'));
 
 zoo.addAnimal(new Dog('Fido', 'Anthony'));
-zoo.addAnimal(new Cat('Scruffy', 'Anthony'));
+zoo.addAnimal(new Cat('Scruffy'));
 
 
 
