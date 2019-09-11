@@ -1,34 +1,23 @@
 
-export interface ISite {
+export interface IAnimal {
     name: string;
-    description?: string;
-    height?: number;
+    readonly legs: number;
 
-    siteType: SiteType
-};
-
-export enum SiteType {
-    building = 'Building',
-    park = 'Park',
-    museum = 'Museum'
+    speak(): void;
 }
 
 
-export function addSite(site: ISite) {
-
+let animal : IAnimal = {
+    name:'Dog',
+    legs: 4,
+    speak() {
+        console.log('Woof woof!');
+    }
 }
 
-const site: ISite = {
-    name: 'Willis Tower',
-    height: 1500,
-    siteType: SiteType.building
-};
+animal.name = "Fido";
 
-addSite(site);
+animal.speak();
 
-const site2 = {
-    name: 'Field Museum',
-    siteType: SiteType.park
-};
 
-addSite(site2);
+
