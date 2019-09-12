@@ -1,0 +1,36 @@
+{
+	"DemoSurfer": {
+		"prefix": "demoSurfer",
+		"body": [
+		  "",
+		  "export class Surfer {",
+		  "    surf() {",
+		  "        console.log('Surfs Up!');",
+		  "    }",
+		  "}",
+		],
+		"description": "Creates Surfer class"
+	  },
+	  "Extend Method": {
+		"prefix": "demoExtend",
+		"body": [
+		  "function extend<First extends object, Second extends object>(first: First, second: Second): First & Second {",
+		  "    const result: Partial<First & Second> = {};",
+		  "    for (const prop in first) {",
+		  "        if (first.hasOwnProperty(prop)) {",
+		  "            (result as First)[prop] = first[prop];",
+		  "        }",
+		  "    }",
+		  "    for (const prop in second) {",
+		  "        if (second.hasOwnProperty(prop)) {",
+		  "            (result as Second)[prop] = second[prop];",
+		  "        }",
+		  "    }",
+		  "    return result as First & Second;",
+		  "}",
+		  ""
+		],
+		"description": "Extend Method"
+	  }
+
+}
