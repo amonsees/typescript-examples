@@ -6,6 +6,7 @@ export function genericFunc<T>(param: T): T {
     return param;
 }
 
+
 const int: number = genericFunc(23);
 
 export class ZooArea<T extends Animal> {
@@ -28,5 +29,17 @@ dogHouse.addAnimal(new Dog('Fido','Anthony'));
 zoo.addAnimal(new Dog('Fido', 'Anthony'));
 zoo.addAnimal(new Cat('Scruffy'));
 
+
+
+
+function getProperty<T, K extends keyof T>(obj: T, key: K) {
+    return obj[key];
+}
+
+let x = { a: 1, b: 2, c: 3, d: 4 };
+
+getProperty(x, 'a');
+
+getProperty(x, 'd');
 
 
