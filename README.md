@@ -7,4 +7,6 @@ This project contains examples for the VS Live Chicago Presentation - Advanced T
 * Clone repository using git
 * Run `npm install tslint typescript –global` to install TypeScript and TsLint
 * Open directory using VsCode (Install here - https://code.visualstudio.com/download)
-* run 'tsc' to compile
+* Run 'tsc' to compile
+
+Also, you should check out the CodePen examples here - https://codepen.io/collection/XjGqJa/
