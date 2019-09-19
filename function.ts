@@ -1,12 +1,10 @@
 
 
-export function parameterTest(param1: number, param2?: number, param3: number=4, ...moreParams: number[]) {
-
-}
+export function parameterTest(param1: number, param2?: number, param3: number=4, ...moreParams: number[]) {}
 
 parameterTest(1);
-parameterTest(2,23);
-parameterTest(4,4,4);
+parameterTest(1,2);
+parameterTest(1,2,3,4,5);
 
 export function parameterTest2(...moreParams: number[]) {
 
