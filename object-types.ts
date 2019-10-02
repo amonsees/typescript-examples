@@ -1,6 +1,6 @@
 
 
-const person : {
+let person : {
     firstName: string,
     lastName: string,
 };
